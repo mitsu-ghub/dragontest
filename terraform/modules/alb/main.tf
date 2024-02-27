@@ -52,7 +52,7 @@ resource "aws_route53_record" "devops-alb" {
 # Create Target Group
 resource "aws_lb_target_group" "default-http-tg" {
   name     = "default-http-tg"
-  port     = 8081
+  port     = 80
   protocol = "HTTP"
   vpc_id   = "${var.vpc_id}"
 
